@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: json-xpp-generator
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    branch: main
+    autoDeploy: true
+    healthCheckPath: /
+       
